@@ -1,4 +1,4 @@
-#include "Piece.hpp"
+#include "AbsPiece.hpp"
 
 AbsPiece::AbsPiece() {
 	color_ = "none";
