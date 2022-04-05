@@ -2,6 +2,7 @@
 #include <memory>
 #include <utility> 
 #include <string>
+#include <math.h>
 
 struct Position
 {

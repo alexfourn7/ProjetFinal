@@ -6,5 +6,5 @@ public:
 	King(std::string color, Position pos);
 	virtual ~King();
 
-	bool validateMove(Position newPos);
+	bool validateMove(Board& board, Position newPos);
 };
