@@ -7,5 +7,5 @@ public:
 	Rook(std::string color, Position pos);
 	virtual ~Rook();
 
-	bool validateMove(Board& board, Position newPos);
+	bool validateMove(Position newPos);
 };

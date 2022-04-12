@@ -7,5 +7,5 @@ public:
 	Knight(std::string color, Position pos);
 	virtual ~Knight();
 
-	bool validateMove(Board& board, Position newPos);
+	bool validateMove(Position newPos);
 };

@@ -151,7 +151,7 @@
     <ClCompile Include="King.cpp" />
     <ClCompile Include="Knight.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Piece.cpp" />
+    <ClCompile Include="AbsPiece.cpp" />
     <ClCompile Include="Square.cpp" />
     <ClCompile Include="Rook.cpp" />
   </ItemGroup>
