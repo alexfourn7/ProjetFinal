@@ -9,12 +9,12 @@ public:
 	Board();
 	virtual ~Board();
 
-	bool movePiece(Position lastPos, Position newPos);
-	std::shared_ptr<AbsPiece> getPiece(Position piecePos);
+	bool movePiece(coord::Position lastPos, coord::Position newPos);
+	std::shared_ptr<piece::AbsPiece> getPiece(coord::Position piecePos);
 private:
 	Square chessBoard[8][8];
-	Position kingPosition(std::string color);
-	bool inBoard(Position pos);
-	bool isCheck(Position lastPos, std::string color);
+	coord::Position kingPosition(std::string color);
+	bool inBoard(coord::Position pos);
+	bool isCheck(coord::Position lastPos, std::string color);
 	bool isCheckMate(std::string color);
 };

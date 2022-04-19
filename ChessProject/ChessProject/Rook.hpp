@@ -2,10 +2,12 @@
 #include "AbsPiece.hpp"
 #include "Board.hpp"
 
-class Rook : public AbsPiece {
-public:
-	Rook(std::string color, Position pos);
-	virtual ~Rook();
+namespace piece {
+	class Rook : public AbsPiece {
+	public:
+		Rook(std::string color, coord::Position pos);
+		virtual ~Rook();
 
-	bool validateMove(Position newPos);
-};
+		bool validateMove(coord::Position newPos);
+	};
+}

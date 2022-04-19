@@ -1,34 +1,37 @@
 #include "AbsPiece.hpp"
 
-AbsPiece::AbsPiece() {
-	color_ = "none";
-	type_ = "none";
-}
+namespace piece {
 
-AbsPiece::~AbsPiece() {
-}
+	AbsPiece::AbsPiece() {
+		color_ = "none";
+		type_ = "none";
+	}
 
-const std::string& AbsPiece::getColor() {
-	return color_;
-}
+	AbsPiece::~AbsPiece() {
+	}
 
-const std::string& AbsPiece::getType() {
-	return type_;
-}
+	const std::string& AbsPiece::getColor() {
+		return color_;
+	}
 
-void AbsPiece::setColor(std::string color) {
-	color_ = color;
-}
+	const std::string& AbsPiece::getType() {
+		return type_;
+	}
 
-void AbsPiece::setType(std::string type) {
-	type_ = type;
-}
+	void AbsPiece::setColor(std::string color) {
+		color_ = color;
+	}
 
-void AbsPiece::setPosition(Position newPos) {
-	position_ = newPos;
-}
+	void AbsPiece::setType(std::string type) {
+		type_ = type;
+	}
 
-const Position& AbsPiece::getPosition() {
-	return position_;
-}
+	void AbsPiece::setPosition(coord::Position newPos) {
+		position_ = newPos;
+	}
 
+	const coord::Position& AbsPiece::getPosition() {
+		return position_;
+	}
+
+}

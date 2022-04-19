@@ -2,10 +2,12 @@
 #include "AbsPiece.hpp"
 #include "Board.hpp"
 
-class Knight : public AbsPiece {
-public:
-	Knight(std::string color, Position pos);
-	virtual ~Knight();
+namespace piece {
+	class Knight : public AbsPiece {
+	public:
+		Knight(std::string color, coord::Position pos);
+		virtual ~Knight();
 
-	bool validateMove(Position newPos);
-};
+		bool validateMove(coord::Position newPos);
+	};
+}

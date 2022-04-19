@@ -6,10 +6,10 @@ public:
 	Square();
 	virtual ~Square();
 
-	void setPiece(std::shared_ptr<AbsPiece> piece);
+	void setPiece(std::shared_ptr<piece::AbsPiece> piece);
 	void clearPiece();
-	std::shared_ptr<AbsPiece> getPiece();
+	std::shared_ptr<piece::AbsPiece> getPiece();
 
 private:
-	std::shared_ptr<AbsPiece> piece_;
+	std::shared_ptr<piece::AbsPiece> piece_;
 };
