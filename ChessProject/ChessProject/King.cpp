@@ -9,14 +9,14 @@ namespace piece {
         setColor(color);
         setPosition(pos);
         setType("king");
-        kingCounter_++;
-        if (kingCounter_ > 2) {
-            throw("More than two kings");
-            //A retravailler
+        if (kingCounter_ >= 2) {
+            throw MoreThanTwoKingsException("There's already two kings in the game !");
         }
+        kingCounter_++;
     }
 
     King::~King() {
+        kingCounter_--;
     }
 
     bool King::validateMove(coord::Position newPos) {
@@ -35,5 +35,9 @@ namespace piece {
         }
 
         return isMoveValid;
+    }
+
+    int King::getCounter() {
+        return kingCounter_;
     }
 }

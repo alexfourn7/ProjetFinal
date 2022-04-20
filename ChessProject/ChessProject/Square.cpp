@@ -15,7 +15,7 @@ void Square::clearPiece() {
     piece_ = nullptr;
 }
 
-std::shared_ptr<piece::AbsPiece> Square::getPiece() {
+std::shared_ptr<piece::AbsPiece>& Square::getPiece() {
     return piece_;
 }
 

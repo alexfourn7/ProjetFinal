@@ -1,12 +1,2 @@
-﻿  AbsPiece.cpp
-  Board.cpp
-C:\Users\alext\OneDrive\Documents\GitHub\ProjetFinal\ChessProject\ChessProject\Board.cpp(15,8): warning C4804: '<=': unsafe use of type 'bool' in operation
-C:\Users\alext\OneDrive\Documents\GitHub\ProjetFinal\ChessProject\ChessProject\Board.cpp(15,27): warning C4804: '<=': unsafe use of type 'bool' in operation
-  King.cpp
-  Knight.cpp
-  Rook.cpp
-  Square.cpp
-  main.cpp
-  Generating Code...
-C:\Users\alext\OneDrive\Documents\GitHub\ProjetFinal\ChessProject\ChessProject\Board.cpp(30): warning C4715: 'Board::kingPosition': not all control paths return a value
+﻿  main.cpp
   ChessProject.vcxproj -> C:\Users\alext\OneDrive\Documents\GitHub\ProjetFinal\ChessProject\Debug\ChessProject.exe

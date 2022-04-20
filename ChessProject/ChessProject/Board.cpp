@@ -1,6 +1,23 @@
 #include "Board.hpp" 
+#include "King.hpp"
 
 Board::Board() {
+	//Initialize the pieces
+	using namespace coord;
+	Position pos(0, 0);
+	Position pos1(1, 0);
+	Position pos2(2, 0);
+	try {
+		piece::King Jerome("white", pos);
+		piece::King Alex("black", pos1);
+		//piece::King Emile("white", pos2);
+		chessBoard[0][0].getPiece() = std::make_shared<piece::King>(Jerome);
+		chessBoard[1][0].getPiece() = std::make_shared<piece::King>(Alex);
+		//chessBoard[2][0].getPiece() = std::make_shared<piece::King>(Emile);
+	}
+	catch (MoreThanTwoKingsException& e) {
+		std::cout << "Error with the instantiation of the king. " << e.what() << std::endl;
+	}
 }
 
 Board::~Board() {
