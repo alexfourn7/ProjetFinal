@@ -143,6 +143,7 @@
     <ClInclude Include="King.hpp" />
     <ClInclude Include="AbsPiece.hpp" />
     <ClInclude Include="Knight.hpp" />
+    <ClInclude Include="RAII.hpp" />
     <ClInclude Include="Square.hpp" />
     <ClInclude Include="Rook.hpp" />
   </ItemGroup>
