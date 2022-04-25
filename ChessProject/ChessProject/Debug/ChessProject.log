@@ -1,2 +1,7 @@
-﻿  main.cpp
-  ChessProject.vcxproj -> C:\Users\alext\OneDrive\Documents\GitHub\ProjetFinal\ChessProject\Debug\ChessProject.exe
+﻿  Board.cpp
+C:\Users\mat_f\OneDrive\Documents\GitHub\ProjetFinal\ChessProject\ChessProject\Board.cpp(32,8): warning C4804: '<=' : utilisation risquée du type 'bool' dans l'opération
+C:\Users\mat_f\OneDrive\Documents\GitHub\ProjetFinal\ChessProject\ChessProject\Board.cpp(32,27): warning C4804: '<=' : utilisation risquée du type 'bool' dans l'opération
+  main.cpp
+  Génération de code en cours...
+C:\Users\mat_f\OneDrive\Documents\GitHub\ProjetFinal\ChessProject\ChessProject\Board.cpp(47): warning C4715: 'Board::kingPosition' : les chemins de contrôle ne retournent pas tous une valeur
+  ChessProject.vcxproj -> C:\Users\mat_f\OneDrive\Documents\GitHub\ProjetFinal\ChessProject\Debug\ChessProject.exe

@@ -10,7 +10,7 @@ public:
 	virtual ~Board();
 
 	bool movePiece(coord::Position lastPos, coord::Position newPos);
-	std::shared_ptr<piece::AbsPiece> getPiece(coord::Position piecePos);
+	std::shared_ptr<piece::AbsPiece>& getPiece(coord::Position piecePos);
 private:
 	Square chessBoard[8][8];
 	coord::Position kingPosition(std::string color);

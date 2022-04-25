@@ -14,5 +14,6 @@ int main() {
 	Rook r("white", pos);
 	auto rook = std::make_shared<piece::Rook>(r);
 	Piece p(rook);
+	std::cout << board.getPiece(pos).get()->getType() << std::endl;
 	p.~Piece();
 }

@@ -11,9 +11,9 @@ Board::Board() {
 		piece::King Jerome("white", pos);
 		piece::King Alex("black", pos1);
 		//piece::King Emile("white", pos2);
-		chessBoard[0][0].getPiece() = std::make_shared<piece::King>(Jerome);
-		chessBoard[1][0].getPiece() = std::make_shared<piece::King>(Alex);
-		//chessBoard[2][0].getPiece() = std::make_shared<piece::King>(Emile);
+		getPiece(pos) = std::make_shared<piece::King>(Jerome);
+		getPiece(pos1) = std::make_shared<piece::King>(Alex);
+		//getPiece(pos2) = std::make_shared<piece::King>(Emile);
 	}
 	catch (MoreThanTwoKingsException& e) {
 		std::cout << "Error with the instantiation of the king. " << e.what() << std::endl;
@@ -23,7 +23,7 @@ Board::Board() {
 Board::~Board() {
 }
 
-std::shared_ptr<piece::AbsPiece> Board::getPiece(coord::Position piecePos) {
+std::shared_ptr<piece::AbsPiece>& Board::getPiece(coord::Position piecePos) {
 	return chessBoard[piecePos.x][piecePos.y].getPiece();
 }
 
